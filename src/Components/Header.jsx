@@ -38,7 +38,7 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <NavLink to="/auth/login"><a className="btn">Login</a></NavLink>
   </div>
     </div>
   )

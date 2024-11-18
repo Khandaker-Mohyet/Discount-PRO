@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
   return (
     <div className='min-h-screen flex justify-center items-center -mt-14'>
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-        <form className="card-body">
+        <form  className="card-body">
           <h2 className='text-2xl font-bold text-center'>Login your account</h2>
         <div className="form-control">
           <label className="label">
