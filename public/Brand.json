@@ -1,0 +1,158 @@
+[
+  {
+    "_id": "1a2b3c4d5e",
+    "brand_name": "Bata",
+    "rating": 4.5,
+    "description": "Your one-stop shop for the latest tech gadgets.",
+    "brand_logo": "https://i.ibb.co.com/93yxJFn/Bata.png",
+    "coupons": [
+      {
+        "coupon_code": "TECH10",
+        "description": "10% off on all electronics",
+        "expiry_date": "2024-12-31",
+        "condition": "Minimum purchase of $100",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FREESHIP",
+        "description": "Free shipping on orders above $50",
+        "expiry_date": "2024-06-30",
+        "condition": "No coupon stacking allowed",
+        "coupon_type": "Shipping"
+      }
+    ],
+    "shop_link": "https://techgadgets.com",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "2f3g4h5i6j",
+    "brand_name": "Apex",
+    "rating": 4.8,
+    "description": "Trendy and affordable fashion for everyone.",
+    "brand_logo": "https://i.ibb.co.com/XpKCBcz/Apex.png",
+    "coupons": [
+      {
+        "coupon_code": "STYLE20",
+        "description": "20% off on new arrivals",
+        "expiry_date": "2024-11-30",
+        "condition": "Applicable on selected items only",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "SUMMER2024",
+        "description": "Flat $15 off on summer collection",
+        "expiry_date": "2024-08-15",
+        "condition": "Minimum purchase of $75",
+        "coupon_type": "Flat"
+      }
+    ],
+    "shop_link": "https://fashionfrenzy.com",
+    "category": "Clothing",
+    "isSaleOn": false
+  },
+  {
+    "_id": "3k4l5m6n7o",
+    "brand_name": "Infinity",
+    "rating": 4.2,
+    "description": "Quality essentials for your home and living.",
+    "brand_logo": "https://i.ibb.co.com/NmFmCds/Infinity.webp",
+    "coupons": [
+      {
+        "coupon_code": "HOME10",
+        "description": "10% off on home decor",
+        "expiry_date": "2024-09-01",
+        "condition": "Only valid on first purchase",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "BUY2GET1",
+        "description": "Buy 2, Get 1 Free on kitchen essentials",
+        "expiry_date": "2024-07-31",
+        "condition": "Lowest-priced item will be free",
+        "coupon_type": "Buy X Get Y"
+      }
+    ],
+    "shop_link": "https://homeessentials.com",
+    "category": "Home and Living",
+    "isSaleOn": true
+  },
+  {
+    "_id": "4p5q6r7s8t",
+    "brand_name": "Sapno",
+    "rating": 4.7,
+    "description": "Premium beauty products for every skin type.",
+    "brand_logo": "https://i.ibb.co.com/mhHDhdf/Sapno.png",
+    "coupons": [
+      {
+        "coupon_code": "BEAUTY15",
+        "description": "15% off on skincare products",
+        "expiry_date": "2024-05-30",
+        "condition": "Valid on selected brands only",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "MAKEUP20",
+        "description": "20% off on makeup essentials",
+        "expiry_date": "2024-10-01",
+        "condition": "Minimum purchase of $50",
+        "coupon_type": "Percentage"
+      }
+    ],
+    "shop_link": "https://beautybliss.com",
+    "category": "Beauty and Personal Care",
+    "isSaleOn": true
+  },
+  {
+    "_id": "5u6v7w8x9y",
+    "brand_name": "Aaorng",
+    "rating": 4.3,
+    "description": "Gear up with the best fitness products.",
+    "brand_logo": "https://i.ibb.co.com/2SjHmtb/aarong.jpg",
+    "coupons": [
+      {
+        "coupon_code": "FIT25",
+        "description": "25% off on workout gear",
+        "expiry_date": "2024-09-15",
+        "condition": "Applicable on orders above $100",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FREESHIPFIT",
+        "description": "Free shipping on all fitness supplements",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required",
+        "coupon_type": "Shipping"
+      }
+    ],
+    "shop_link": "https://fitlife.com",
+    "category": "Fitness",
+    "isSaleOn": false
+  },
+  {
+    "_id": "6z7a8b9c0d",
+    "brand_name": "Agora",
+    "rating": 4.6,
+    "description": "Exclusive deals for your travel needs.",
+    "brand_logo": "https://i.ibb.co.com/Y3vxp5S/agora.png",
+    "coupons": [
+      {
+        "coupon_code": "TRIP10",
+        "description": "10% off on hotel bookings",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid for domestic hotels only",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "HOLIDAY50",
+        "description": "Flat $50 off on international trips",
+        "expiry_date": "2024-11-20",
+        "condition": "Minimum spend of $500",
+        "coupon_type": "Flat"
+      }
+    ],
+    "shop_link": "https://travelease.com",
+    "category": "Travel",
+    "isSaleOn": true
+  }
+]
