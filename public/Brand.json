@@ -1,6 +1,6 @@
 [
   {
-    "_id": "1a2b3c4d5e",
+    "id": "1a2b3c4d5e",
     "brand_name": "Bata",
     "rating": 4.5,
     "description": "Your one-stop shop for the latest tech gadgets.",
@@ -26,7 +26,7 @@
     "isSaleOn": true
   },
   {
-    "_id": "2f3g4h5i6j",
+    "id": "2f3g4h5i6j",
     "brand_name": "Apex",
     "rating": 4.8,
     "description": "Trendy and affordable fashion for everyone.",
@@ -52,7 +52,7 @@
     "isSaleOn": false
   },
   {
-    "_id": "3k4l5m6n7o",
+    "id": "3k4l5m6n7o",
     "brand_name": "Infinity",
     "rating": 4.2,
     "description": "Quality essentials for your home and living.",
@@ -78,7 +78,7 @@
     "isSaleOn": true
   },
   {
-    "_id": "4p5q6r7s8t",
+    "id": "4p5q6r7s8t",
     "brand_name": "Sapno",
     "rating": 4.7,
     "description": "Premium beauty products for every skin type.",
@@ -104,7 +104,7 @@
     "isSaleOn": true
   },
   {
-    "_id": "5u6v7w8x9y",
+    "id": "5u6v7w8x9y",
     "brand_name": "Aaorng",
     "rating": 4.3,
     "description": "Gear up with the best fitness products.",
@@ -130,7 +130,7 @@
     "isSaleOn": false
   },
   {
-    "_id": "6z7a8b9c0d",
+    "id": "6z7a8b9c0d",
     "brand_name": "Agora",
     "rating": 4.6,
     "description": "Exclusive deals for your travel needs.",

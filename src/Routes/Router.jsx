@@ -7,6 +7,7 @@ import Brand from "../Pages/Brand";
 import AuthLayout from "../Main/AuthLayout";
 import Login from "../Pages/Login";
 import Rgaister from "../Pages/Rgaister";
+import Details from "../Components/Details";
 
 const router = createBrowserRouter([
   {
@@ -20,12 +21,15 @@ const router = createBrowserRouter([
       },
       {
        path: "/brand",
-       element: <Brand></Brand>
+       element: <Brand></Brand>,
+       loader: ()=> fetch('../Brand.json')
       },
       {
-           path: "/login",
-           element: <Login></Login>,
-      },
+        Path: "/details/:id",
+        element: <Details></Details>,
+        loader: ()=> fetch('../Brand.json')
+      }
+      
       
     ]
     

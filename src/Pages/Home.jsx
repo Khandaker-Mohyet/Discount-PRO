@@ -3,6 +3,7 @@ import Banner from '../Components/Banner';
 import BrandLogo from '../Components/BrandLogo';
 import { useLoaderData } from 'react-router-dom';
 import HomeCard from '../Components/HomeCard';
+import Brand from './Brand';
 
 const Home = () => {
   const  brands  = useLoaderData()
