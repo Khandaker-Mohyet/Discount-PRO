@@ -38,6 +38,11 @@ const Header = () => {
       <NavLink className={({ isActive }) => ` font-bold ${isActive ? 'text-[#570DF8]' : 'hover:text-[#570DF8]'}`} to="/">Home</NavLink>
       <NavLink className={({ isActive }) => ` font-bold ${isActive ? 'text-[#570DF8]' : 'hover:text-[#570DF8]'}`} to="/brand">Brands</NavLink>
       <NavLink className={({ isActive }) => ` font-bold ${isActive ? 'text-[#570DF8]' : 'hover:text-[#570DF8]'}`} to="/about">About</NavLink>
+          {
+            user && <>
+            <NavLink className={({ isActive }) => ` font-bold ${isActive ? 'text-[#570DF8]' : 'hover:text-[#570DF8]'}`} to="/myProfile">My Profile</NavLink>
+            </> 
+          }
     </ul>
   </div>
   <div className="navbar-end">

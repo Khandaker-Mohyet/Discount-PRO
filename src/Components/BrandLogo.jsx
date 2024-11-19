@@ -8,7 +8,7 @@ const BrandLogo = () => {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold text-primary text-center my-5">Top Brands</h1>
+      <h1 className="text-3xl font-bold text-primary text-center my-5 animate__animated animate__pulse">Top Brands</h1>
       <Marquee pauseOnHover={true} className="mr-10">
       <Link to="/brand"><img className="w-20 h-20 mr-10" src="https://i.ibb.co.com/93yxJFn/Bata.png" alt="" /></Link>
       <Link to="/brand"><img className="w-20 h-12 mr-10" src="https://i.ibb.co.com/XpKCBcz/Apex.png" alt="" /></Link>

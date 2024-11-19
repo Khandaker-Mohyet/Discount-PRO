@@ -9,6 +9,8 @@ import Login from "../Pages/Login";
 import Rgaister from "../Pages/Rgaister";
 import Details from "../Components/Details";
 import About from "../Pages/About";
+import PrivateRoute from "./PrivateRoute";
+import MyProfile from "../Pages/MyProfile";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +29,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/details/:id",
-        element: <Details></Details>,
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
         loader: ()=> fetch('../Brand.json')
+      },
+      {
+        path: "/myProfile",
+        element:<PrivateRoute><MyProfile></MyProfile></PrivateRoute>
       },
       {
         path: "/about",
