@@ -26,23 +26,23 @@ const Header = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/brand">Brands</NavLink>
-        <NavLink to="/">About</NavLink>
+        <NavLink className={({ isActive }) => ` font-bold ${isActive ? 'text-[#570DF8]' : 'hover:text-[#570DF8]'}`} to="/">Home</NavLink>
+        <NavLink className={({ isActive }) => ` font-bold ${isActive ? 'text-[#570DF8]' : 'hover:text-[#570DF8]'}`} to="/brand">Brands</NavLink>
+        <NavLink className={({ isActive }) => ` font-bold ${isActive ? 'text-[#570DF8]' : 'hover:text-[#570DF8]'}`} to="/about">About</NavLink>
       </ul>
     </div>
     <a className="flex"><img className='w-20 h-20 items-center' src={logo} alt="" /></a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 space-x-5">
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/brand">Brands</NavLink>
-      <NavLink to="/">About</NavLink>
+    <ul className="menu menu-horizontal text-sm font-bold px-1 space-x-5">
+      <NavLink className={({ isActive }) => ` font-bold ${isActive ? 'text-[#570DF8]' : 'hover:text-[#570DF8]'}`} to="/">Home</NavLink>
+      <NavLink className={({ isActive }) => ` font-bold ${isActive ? 'text-[#570DF8]' : 'hover:text-[#570DF8]'}`} to="/brand">Brands</NavLink>
+      <NavLink className={({ isActive }) => ` font-bold ${isActive ? 'text-[#570DF8]' : 'hover:text-[#570DF8]'}`} to="/about">About</NavLink>
     </ul>
   </div>
   <div className="navbar-end">
         {
-          user && user?.email?<button onClick={singInOut} className="btn">Log out</button> : <Link to="/auth/Login" className="btn">Login</Link>
+          user && user?.email?<button onClick={singInOut} className="btn btn-primary font-bold">Log out</button> : <Link to="/auth/Login" className="btn btn-primary font-bold">Login</Link>
         }
   </div>
     </div>

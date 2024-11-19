@@ -6,9 +6,9 @@ const Details = () => {
   const data = useLoaderData()
   const { id } = useParams()
   const [product, setProduct] = useState({})
-  const {brand_name, brand_logo, description} = product
+  const {brand_name, brand_logo, rating, coupons} = product || {}
 
-  console.log(product)
+  console.log(coupons)
 
   useEffect(() => {
 
@@ -19,7 +19,16 @@ const Details = () => {
 
   return (
     <div>
-      {brand_name}
+      <h1 className='text-2xl font-bold'>{brand_name}</h1>
+      <img src={brand_logo} alt="" />
+        
+      <div>
+      {/* {
+       coupons.map((coupon, idx) => (
+       <div key={idx}>{coupon.coupon_code}</div>
+      ))
+      } */}
+      </div>
     </div>
   );
 };

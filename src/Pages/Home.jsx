@@ -4,6 +4,8 @@ import BrandLogo from '../Components/BrandLogo';
 import { useLoaderData } from 'react-router-dom';
 import HomeCard from '../Components/HomeCard';
 import Brand from './Brand';
+import Footer from '../Components/Footer';
+import StaticSections from '../Components/StaticSections';
 
 const Home = () => {
   const  brands  = useLoaderData()
@@ -17,7 +19,7 @@ const Home = () => {
         brands.map(brand => <HomeCard  key={brand._id} brand={brand}></HomeCard>)
       }
       </div>
-      
+      <StaticSections></StaticSections>
     </div>
   )
 };

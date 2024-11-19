@@ -8,6 +8,7 @@ import AuthLayout from "../Main/AuthLayout";
 import Login from "../Pages/Login";
 import Rgaister from "../Pages/Rgaister";
 import Details from "../Components/Details";
+import About from "../Pages/About";
 
 const router = createBrowserRouter([
   {
@@ -25,9 +26,13 @@ const router = createBrowserRouter([
        loader: ()=> fetch('../Brand.json')
       },
       {
-        Path: "/details/:id",
+        path: "/details/:id",
         element: <Details></Details>,
         loader: ()=> fetch('../Brand.json')
+      },
+      {
+        path: "/about",
+        element: <About></About>
       }
       
       

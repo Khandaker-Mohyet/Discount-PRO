@@ -22,7 +22,7 @@
       }
     ],
     "shop_link": "https://techgadgets.com",
-    "category": "Electronics",
+    "category": "Shoos",
     "isSaleOn": true
   },
   {
@@ -48,7 +48,7 @@
       }
     ],
     "shop_link": "https://fashionfrenzy.com",
-    "category": "Clothing",
+    "category": "Shoos",
     "isSaleOn": false
   },
   {
@@ -74,7 +74,7 @@
       }
     ],
     "shop_link": "https://homeessentials.com",
-    "category": "Home and Living",
+    "category": "Super Shop",
     "isSaleOn": true
   },
   {
@@ -100,7 +100,7 @@
       }
     ],
     "shop_link": "https://beautybliss.com",
-    "category": "Beauty and Personal Care",
+    "category": "Super Shop",
     "isSaleOn": true
   },
   {
@@ -126,7 +126,7 @@
       }
     ],
     "shop_link": "https://fitlife.com",
-    "category": "Fitness",
+    "category": "Super Shop",
     "isSaleOn": false
   },
   {
@@ -152,7 +152,7 @@
       }
     ],
     "shop_link": "https://travelease.com",
-    "category": "Travel",
+    "category": "Super Shop",
     "isSaleOn": true
   }
 ]
