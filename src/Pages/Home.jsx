@@ -9,7 +9,7 @@ import StaticSections from '../Components/StaticSections';
 
 const Home = () => {
   const  brands  = useLoaderData()
-  console.log(brands)
+  // console.log(brands)
   return (
     <div className='w-10/12 mx-auto'>
       <Banner></Banner>

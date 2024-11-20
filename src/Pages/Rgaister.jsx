@@ -1,11 +1,13 @@
 
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
+import toast from 'react-hot-toast';
 
 const Rgaister = () => {
 
-  const {createUser, setUser} = useContext(AuthContext)
+  const { createUser, setUser, updateUserProfile } = useContext(AuthContext)
+  const navigate = useNavigate()
 
 
   const handelRegister = (e) => {
@@ -15,15 +17,26 @@ const Rgaister = () => {
     const name = e.target.name.value
     const photo = e.target.photo.value
 
-    console.log(email, password, name, photo)
+    // console.log(email, password, name, photo)
 
     createUser(email, password)
       .then(result => {
         console.log(result.user)
         setUser(result.user)
+        updateUserProfile({ displayName: name, photoURL: photo })
+        .then(() => {
+          navigate("/")
+          toast.success('Successfully Register!')
+          })
+
+        .catch((error) => {
+          console.log(error)
+          toast.error("This didn't work.")
+        })
       })
       .catch(error => {
-      console.log(error)
+        console.log(error)
+        toast.error("This didn't work.")
     })
   }
   return (

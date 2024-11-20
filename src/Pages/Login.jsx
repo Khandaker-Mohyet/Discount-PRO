@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 
 
@@ -29,10 +30,12 @@ const Login = () => {
     logInUser(email, password)
       .then(result => {
         console.log(result)
-        navigate(location?.state? location.state: "/")
+        navigate(location?.state ? location.state : "/")
+        toast.success('Successfully login!')
       })
       .catch(error => {
-      console.log(error)
+        console.log(error)
+        toast.error("This didn't work.")
       })
     
 
@@ -55,9 +58,6 @@ const Login = () => {
             <span className="label-text">Password</span>
           </label>
             <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-            {/* {
-              error.login && <label className="label text-red-600">{error.login}</label>
-            } */}
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>

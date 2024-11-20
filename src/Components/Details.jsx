@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import toast from 'react-hot-toast';
 
 const Details = () => {
   const data = useLoaderData()
@@ -59,7 +60,7 @@ const Details = () => {
         <button className="btn btn-primary btn-outline my-2">Copy Code</button>
       </CopyToClipboard>
       {isCopied && (
-        <p className="text-green-500 mt-2">Coupon code copied successfully!</p>
+        toast.success('Successfully login!')
       )}
            
            
