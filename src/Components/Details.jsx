@@ -60,7 +60,7 @@ const Details = () => {
         <button className="btn btn-primary btn-outline my-2">Copy Code</button>
       </CopyToClipboard>
       {isCopied && (
-        toast.success('Successfully login!')
+        toast.success('Copy Code')
       )}
            
            
