@@ -25,7 +25,7 @@ const Login = () => {
     const email = e.target.email.value
     const password = e.target.password.value
 
-    console.log(email, password)
+    // console.log(email, password)
 
     logInUser(email, password)
       .then(result => {
@@ -35,7 +35,7 @@ const Login = () => {
       })
       .catch(error => {
         console.log(error)
-        toast.error("This didn't work.")
+        toast.error("email and password don't match")
       })
     
 

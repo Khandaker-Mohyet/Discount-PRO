@@ -1,13 +1,15 @@
 
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 import toast from 'react-hot-toast';
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Rgaister = () => {
 
   const { createUser, setUser, updateUserProfile } = useContext(AuthContext)
   const navigate = useNavigate()
+  const [showPassword, setShowPassword] = useState(false)
 
 
   const handelRegister = (e) => {
@@ -31,12 +33,12 @@ const Rgaister = () => {
 
         .catch((error) => {
           console.log(error)
-          toast.error("This didn't work.")
+          toast.error("Invalid input")
         })
       })
       .catch(error => {
         console.log(error)
-        toast.error("This didn't work.")
+        toast.error("Invalid input")
     })
   }
   return (
@@ -62,17 +64,25 @@ const Rgaister = () => {
           </label>
           <input type="email" name="email" placeholder="email" className="input input-bordered" required />
         </div>
-        <div className="form-control">
+        <div className="form-control relative">
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-          <div className="form-control">
+          <input
+            type={showPassword ? "text" : "password"}
+            name="password"
+            placeholder="password"
+            className="input input-bordered" required />
+          <button onClick={() => setShowPassword(!showPassword)} className="btn btn-xs absolute right-4 top-12">
+            {
+              showPassword? <FaEyeSlash /> : <FaEye />
+            }
+            </button>
           <label className="cursor-pointer justify-start label">
-          <input type="checkbox" defaultChecked className="checkbox checkbox-sm mr-3" />
-          <span className="label-text">Accept Term & Conditions</span>
-        </label>
-         </div>
+            <input type="checkbox" name="terms" className="checkbox checkbox-accent mr-3" />
+            <span className="label-text">Accept our term and condition</span>
+         
+         </label>
         </div>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Register</button>

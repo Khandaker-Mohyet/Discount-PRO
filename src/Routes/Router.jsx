@@ -59,7 +59,11 @@ const router = createBrowserRouter([
       },
           
     ]
-  }
+  },
+  {
+    path: "*",
+    element: <div>error</div>,
+  },
   
   
 ]);

@@ -11,14 +11,12 @@ const MyProfile = () => {
     const photo = e.target.photo.value
 
     updateUserProfile({ displayName: name, photoURL: photo })
-        .then(() => {
-          
+      .then(() => {
           toast.success('Successfully update!')
           })
 
         .catch((error) => {
           console.log(error)
-          toast.error("This didn't work.")
         })
   }
   return (
