@@ -3,7 +3,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 import toast from 'react-hot-toast';
 
 const MyProfile = () => {
-  const { user, updateUserProfile} = useContext(AuthContext)
+  const { user, updateUserProfile, setUser} = useContext(AuthContext)
   
   const handelUpdate = (e) => {
     e.preventDefault()
@@ -12,6 +12,7 @@ const MyProfile = () => {
 
     updateUserProfile({ displayName: name, photoURL: photo })
       .then(() => {
+          setUser(prev=>{return{...prev,displayName:name,photoUrl:photo}})
           toast.success('Successfully update!')
           })
 
