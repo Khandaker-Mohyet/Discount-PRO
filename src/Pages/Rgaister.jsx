@@ -21,6 +21,12 @@ const Rgaister = () => {
 
     // console.log(email, password, name, photo)
 
+    const regex = /^(?=.*[a-z])(?=.*[A-Z]).+$/;
+if (!regex.test(password)) {
+  toast.error("Password must contain at least one uppercase and one lowercase letter");
+  return
+}
+
     createUser(email, password)
       .then(result => {
         console.log(result.user)
@@ -73,7 +79,7 @@ const Rgaister = () => {
             name="password"
             placeholder="password"
             className="input input-bordered" required />
-          <button onClick={() => setShowPassword(!showPassword)} className="btn btn-xs absolute right-4 top-12">
+          <button type='button' onClick={() => setShowPassword(!showPassword)} className="btn btn-xs absolute right-4 top-12">
             {
               showPassword? <FaEyeSlash /> : <FaEye />
             }
