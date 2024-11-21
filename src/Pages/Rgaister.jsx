@@ -30,10 +30,11 @@ if (!regex.test(password)) {
     createUser(email, password)
       .then(result => {
         console.log(result.user)
-        setUser(result.user)
+        // setUser(result.user)
         updateUserProfile({ displayName: name, photoURL: photo })
         .then(() => {
           navigate("/")
+          setUser(result.user)
           toast.success('Successfully Register!')
           })
 
