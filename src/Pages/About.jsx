@@ -22,7 +22,7 @@ const About = () => {
                 <strong>Wide Categories</strong>: Electronics, clothing, home & living, beauty, fitness, and travel.
               </li>
               <li>
-                <strong>Trust & Transparency</strong>: Clear terms for all offers, ensuring a hassle-free experience.
+                <strong>Trust & Transparency</strong>: Clear terms for all offers, ensuring a hassle-free experience This is nothing.
               </li>
             </ul>
           </div>
